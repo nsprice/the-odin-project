@@ -11,4 +11,7 @@ function getPrime(number) {
     return factor;
 }
 
-getPrime(600851475143);
+var numb = prompt("What number would you like to find the greatest prime factor?");
+
+getPrime(numb);
+//euler number is 600851475143
