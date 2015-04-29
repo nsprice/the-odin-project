@@ -1,9 +1,14 @@
-var n=600851475143;
-var arr=[];
-for(i=0;i<n;i++){
-  if (n%i===0){
-    n = n/i;
-    arr.push(n);
-  }
+function getPrime(number) {
+    var factor = 2;
+    while(number != factor) {
+        if(number % factor === 0) {
+            number = number / factor;
+        }
+        else {
+            factor++;
+        }
+    }
+    return factor;
 }
-console.log(arr[arr.length-1]);
+
+getPrime(600851475143);
